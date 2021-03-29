@@ -6,6 +6,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
     margin: 0;
+    padding: 10px;
 }
 
 .layout{
@@ -25,9 +26,30 @@ body{
 .sidebar{
     grid-area: sidebar;
     /* place-self: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar>button{
+    margin: 20px;
 }
 
 .sketchpad{
     grid-area: sketchpad;
+    place-self: center;
+    height: 600px;
+    width: 600px;
     display: grid;
+    /* grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(32, 1fr); */
+}
+
+.pixel{
+    border: 1px solid lightgrey;
+    height: 1fr;
+}
+
+.pixel:hover{
+    background-color: lightpink;
 }
